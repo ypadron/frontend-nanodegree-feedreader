@@ -1,3 +1,46 @@
+# Feed Reader Testing (with jasmine) Project
+
+Front End Web Developer Nanodegree Program
+==========================================
+
+## Table of Contents
+
+* [Description](#description)
+* [Instructions](#instructions)
+* [Resources](#resources)
+* [Contributing](#contributing)
+
+## Description
+
+
+## Instructions
+
+To install:
+1. Clone or download (ZIP file) the repository using the green clone or download button on the right side of the screen.
+2. Navigate to the location of the clone or unZIPped file on your computer.
+3. Double click on the index.html file to open and view the test results in your browser.
+
+To view click here: [Feed Reader Test](https://ypadron.github.io/frontend-nanodegree-feedreader/)
+
+## Resources used
+
+* [MDN: DOM Element Properties](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+* [MDN: HTML Element click() Method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
+* [FEND P4: Resources](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)?key=i5xqspbzvg)
+* [Matthew Cranford's Feed Reader Walkthrough](https://matthewcranford.com/feed-reader-walkthrough-part-1-starter-code/)
+* []
+
+## Contributing
+
+This repository is forked from the starter code for _all_ Udacity students, my version of a popular assignment. Therefore,
+I most likely will not accept pull requests.
+
+For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+==========================================================================================================================
+
+##### Original Project Instructions/README Text
+
 # Project Overview
 
 In this project you are given a web-based application that reads RSS feeds. The original developer of this application clearly saw the value in testing, they've already included [Jasmine](http://jasmine.github.io/) and even started writing their first test suite! Unfortunately, they decided to move on to start their own company and we're now left with an application with an incomplete test suite. That's where you come in.
@@ -44,5 +87,5 @@ Review the Feed Reader Testing [Project Rubric](https://review.udacity.com/#!/pr
 17. No test should be dependent on the results of another.
 18. Callbacks should be used to ensure that feeds are loaded before they are tested.
 19. Implement error handling for undefined variables and out-of-bound array access.
-20. When complete - all of your tests should pass. 
+20. When complete - all of your tests should pass.
 21. Write a README file detailing all steps required to successfully run the application. If you have added additional tests (for Udacious Test Coverage),  provide documentation for what these future features are and what the tests are checking for.
