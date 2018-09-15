@@ -8,6 +8,9 @@
  * since some of these tests may require DOM elements. We want
  * to ensure they don't run until the DOM is ready.
  */
+ // Attempt to use jasmine-jquery package - unsuccessful
+// var jasmineJquery = require("jasmine-jquery");
+
 $(function() {
     /* This is our first test suite - a test suite just contains
     * a related set of tests. This suite is all about the RSS
@@ -55,18 +58,34 @@ $(function() {
 
 
     /* TODO: Write a new test suite named "The menu" */
-
+      describe("The menu", function() {
         /* TODO: Write a test that ensures the menu element is
          * hidden by default. You'll have to analyze the HTML and
          * the CSS to determine how we're performing the
          * hiding/showing of the menu element.
          */
+         let body = document.querySelector("body");
+         let menuIcon = document.querySelector(".menu-icon-link");
 
-         /* TODO: Write a test that ensures the menu changes
-          * visibility when the menu icon is clicked. This test
-          * should have two expectations: does the menu display when
-          * clicked and does it hide when clicked again.
-          */
+         it("is hidden by default", function()  {
+           // read-only property returns a live DOMTokenList - methods: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+           expect(body.classList.contains("menu-hidden")).toBe(true);
+         });
+
+      describe("The menu icon", function() {
+        /* TODO: Write a test that ensures the menu changes
+         * visibility when the menu icon is clicked. This test
+         * should have two expectations: does the menu display when
+         * clicked and does it hide when clicked again.
+         */
+         it("changes visibility when clicked", function()  {
+           menuIcon.click();  //https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click
+           expect(body.classList.contains("menu-hidden")).toBe(false);
+           menuIcon.click();
+           expect(body.classList.contains("menu-hidden")).toBe(true);
+         });
+      });
+  });
 
     /* TODO: Write a new test suite named "Initial Entries" */
 
