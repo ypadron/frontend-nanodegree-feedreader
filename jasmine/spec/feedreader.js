@@ -37,7 +37,7 @@ $(function() {
          it("has defined url", function()  {
            allFeeds.forEach(function(feed)  {
               expect(feed.url).toBeDefined();
-              expect(feed.url).not.toBe("");
+              expect(feed.url).not.toBe("", null);
          });
        });
     });
