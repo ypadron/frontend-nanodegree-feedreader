@@ -50,7 +50,7 @@ $(function() {
          it("has defined name", function()  {
            allFeeds.forEach(function(feed)  {
              expect(feed.name).toBeDefined();
-             expect(feed.name).not.toBe("");
+             expect(feed.name).not.toBe("", null);
            });
          });
       });
@@ -87,6 +87,7 @@ $(function() {
       });
   });
 
+
     /* TODO: Write a new test suite named "Initial Entries" */
       describe("Initial Entries", function()  {
         /* TODO: Write a test that ensures when the loadFeed
@@ -109,15 +110,45 @@ $(function() {
            // expect(container.contains(".entry")).toBe(true);
            done();
          });
-
       });
 
 
-
     /* TODO: Write a new test suite named "New Feed Selection" */
-
+      describe("New Feed Selection", function() {
         /* TODO: Write a test that ensures when a new feed is loaded
          * by the loadFeed function that the content actually changes.
          * Remember, loadFeed() is asynchronous.
          */
+         let container = document.querySelector(".feed");
+         // let feed = [...container];
+         let feedName = document.querySelector(".entry");
+         let firstFeed;
+         let firstEntry = [];
+         let otherFeeds;
+         let otherEntries = [];
+
+         beforeEach(function(done)  {
+          loadFeed(0, function()  {
+            firstFeed = document.querySelectorAll(".feed .entry");
+            console.log(firstFeed[0].innerText); //(firstFeed.innerText)
+
+
+          loadFeed(1, function()  {
+            otherFeeds = document.querySelectorAll(".feed .entry");
+            done();
+            console.log(otherFeeds[0].innerText); //(firstFeed.innerText)
+        });
+      });
+    });
+         it("checks for content change on new entry load in the feed", function() {
+             // console.log(container);
+             expect(otherFeeds[0].innerText).not.toBe(firstFeed[0].innerText);
+             // otherFeeds.push(container.childNodes.entry.innerText);
+             // console.log(otherFeeds);
+           // });
+           // done();
+         });
+      });
+
+
 }());
