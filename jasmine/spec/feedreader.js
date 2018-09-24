@@ -53,7 +53,8 @@ $(function() {
          let menuIcon = document.querySelector(".menu-icon-link");
 
          it("is hidden by default", function()  {
-           // read-only property returns a live DOMTokenList - methods: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
+           // read-only property returns a live DOMTokenList -
+           // methods: https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
            expect(body.classList.contains("menu-hidden")).toBe(true);
          });
 
@@ -78,6 +79,8 @@ $(function() {
         // function is called and completes its work.
          let container = document.querySelector(".feed");
 
+         // Jasmine specific global function (async) runs setup (loadFeed) before each
+         // spec in the describe (test) in which it is called.
          beforeEach(function(done)  {
            loadFeed(0, done);
          });
@@ -89,9 +92,9 @@ $(function() {
       });
 
 
-      // New test suite
+    // New test suite
     describe("New Feed Selection", function() {
-      // Ensures content actually changes when a new feed is loaded by loadFeed function .
+      // Ensures content actually changes when a new feed is loaded by loadFeed function.
        let firstFeed;
        let otherFeeds;
 
