@@ -90,27 +90,26 @@ $(function() {
 
 
       // New test suite
-      describe("New Feed Selection", function() {
-        // Ensures content actually changes when a new feed is loaded by loadFeed function .
-         let firstFeed;
-         let otherFeeds;
+    describe("New Feed Selection", function() {
+      // Ensures content actually changes when a new feed is loaded by loadFeed function .
+       let firstFeed;
+       let otherFeeds;
 
-         beforeEach(function(done)  {
-          loadFeed(0, function()  {
-            firstFeed = document.querySelectorAll(".feed .entry");
-            console.log(firstFeed[0].innerText);
+      beforeEach(function(done)  {
+        loadFeed(1, function()  {
+          otherFeeds = document.querySelectorAll(".feed .entry");
+          console.log(otherFeeds[0].innerText);
 
-
-          loadFeed(1, function()  {
-            otherFeeds = document.querySelectorAll(".feed .entry");
-            done();
-            console.log(otherFeeds[0].innerText);
+        loadFeed(0, function()  {
+          firstFeed = document.querySelectorAll(".feed .entry");
+          done();
+          console.log(firstFeed[0].innerText);
+          });
         });
       });
-    });
 
-         it("checks for content change on new entry load in the feed", function() {
-             expect(otherFeeds[0].innerText).not.toBe(firstFeed[0].innerText);
+        it("checks for content change on new entry load in the feed", function() {
+           expect(otherFeeds[0].innerText).not.toBe(firstFeed[0].innerText);
          });
       });
 }());
