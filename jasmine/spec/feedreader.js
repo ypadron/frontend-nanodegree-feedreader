@@ -19,7 +19,7 @@ $(function() {
         // allFeeds variable is defined and is not empty.
         it('are defined', function() {
             expect(allFeeds).toBeDefined();
-            expect(allFeeds.length).not.toBe(0);
+            expect(allFeeds.length).not.toBe(0, null);
         });
 
     describe("Each feed in allFeeds Object", function()  {
