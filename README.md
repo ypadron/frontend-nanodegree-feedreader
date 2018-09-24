@@ -12,6 +12,7 @@ Front End Web Developer Nanodegree Program
 
 ## Description
 
+Use Jasmine to complete a test suite for a pre-existing web based application that reads RSS feeds.
 
 ## Instructions
 
@@ -27,11 +28,12 @@ To view click here: [Feed Reader Test](https://ypadron.github.io/frontend-nanode
 * [MDN: DOM Element Properties](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
 * [MDN: HTML Element click() Method](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/click)
 * [innerText vs textContent](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)
-* [children vs childNodes]()
+* [children vs childNodes](https://stackoverflow.com/questions/7935689/what-is-the-difference-between-children-and-childnodes-in-javascript)
+* [Jasmine Asynchronous Work](https://jasmine.github.io/tutorials/async)
 * [FEND P4: Resources](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)?key=i5xqspbzvg)
-* [Alain Cadenat's Feed Reader Walkthrough](https://www.youtube.com/watch?v=pPt4oOKNdEk);
+* [Alain Cadenat's Feed Reader Walkthrough](https://www.youtube.com/watch?v=pPt4oOKNdEk)
 * [Matthew Cranford's Feed Reader Walkthrough](https://matthewcranford.com/feed-reader-walkthrough-part-1-starter-code/)
-* []
+* [Ryan Boris' Feed Reader Walkthrough](https://www.youtube.com/watch?v=7kOBXPbDmyw&feature=youtu.be)
 
 ## Contributing
 
