@@ -41,4 +41,4 @@ To install:
 This repository is forked from the starter code for _all_ Udacity students, my version of a popular assignment. Therefore,
 I most likely will not accept pull requests.
 
-For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+<!-- For details, check out [CONTRIBUTING.md](CONTRIBUTING.md). -->
