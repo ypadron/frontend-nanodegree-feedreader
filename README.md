@@ -12,7 +12,7 @@ Front End Web Developer Nanodegree Program
 
 ## Description
 
-Use Jasmine to complete a test suite for a pre-existing web based application that reads RSS feeds.
+Use Jasmine to complete a set of four test suites for a pre-existing web based application that reads RSS feeds.
 
 ## Instructions
 
@@ -21,7 +21,8 @@ To install:
 2. Navigate to the location of the clone or unZIPped file on your computer.
 3. Double click on the index.html file to open and view the test results in your browser.
 
-To view click here: [Feed Reader Test](https://ypadron.github.io/frontend-nanodegree-feedreader/)
+<!--TODO: Figure out why no specs are found  -->
+<!-- To view click here: [Feed Reader Test](https://ypadron.github.io/frontend-nanodegree-feedreader/) -->
 
 ## Resources used
 
