@@ -77,7 +77,7 @@ $(function() {
 	describe("Initial Entries", function()  {
 		// Ensures an .entry element within the .feed container when loadFeed
 		// function is called and completes its work.
-		let container = document.querySelector(".feed");
+		let entries;
 
 		// Jasmine specific global function (async) runs setup (loadFeed) before each
 		// spec in the describe (test) in which it is called.
@@ -85,9 +85,10 @@ $(function() {
 			loadFeed(0, done);
 		});
 
-		it("verifies feed contains an entry after loadFeed function executes", function(done) {
-			expect(container.children.length).toBeGreaterThan(0);
-			done();
+		it("verifies feed contains an entry after loadFeed function executes", function() {
+			entries = document.querySelectorAll(".feed .entry");
+			// console.log(entries);
+			expect(entries.length).toBeGreaterThan(0);
 		});
 	});
 
